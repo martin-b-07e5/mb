@@ -1,0 +1,272 @@
+body {
+  background-color: slategrey;
+  color: green;
+}
+
+h1 {
+  background-color: lightslategrey;
+  font-size: xx-large;
+  text-align: center;
+}
+
+p {
+  padding-left: 0.3%;
+  margin: 0px;
+}
+
+/* w3schools.com/cssref/css3_pr_opacity.asp */
+img:hover {
+  opacity: 0.6;
+  transition:opacity 1s;
+}
+
+.container-main {
+  background-color: orangered;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+.container-btn {
+  background-color: lightcoral;
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  padding: 0.3%;
+}
+
+.container-listProducts {
+  background-color: deepskyblue;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+.container-products {
+  background-color: skyblue;
+  border: 3px dashed orange;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+/*w3schools.com/css/css_positioning.asp*/
+/*section {
+  position: relative;
+}*/
+
+  /*developer.mozilla.org/en-US/docs/Web/CSS/list-style 
+  developer.mozilla.org/en-US/docs/Web/CSS/display 
+  developer.mozilla.org/en-US/docs/Web/CSS/flex-direction 
+  developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap*/
+.xListado {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightsalmon;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: large;
+  /*https://www.w3schools.com/css/css_overflow.asp*/
+  overflow: hidden;
+  /*https://www.w3schools.com/css/css_positioning.asp*/
+  position: relative;
+  /*text-align: center;*/
+  color: whitesmoke;
+}
+
+.subtitulo table {
+  width: 100%;
+  background-color: darkmagenta;
+  text-align: center;
+  border: 2px solid greenyellow;
+}
+
+.xListado li {
+  background-color: magenta;
+  border: 1px solid black;
+  color: slategrey;
+  font-size: 12;
+  margin: 5px;
+  /*padding: 0px;*/
+  padding-bottom: 7px;
+}
+
+/*para que la imagen del listado no sea muy ancha*/
+.xListado li img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 7px;
+}
+
+.xListado li p {
+  padding-left: 12px;
+  padding-bottom: 3px;
+}
+
+
+
+/*header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: black;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+*/
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /*width: 300px;*/
+  border: 3px solid #73AD21;
+  color: cornflowerblue   ;
+}
+
+
+
+
+
+/* Main */
+#menu {
+  background: #111;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+#menu li {
+  float: left;
+  margin: 0.1%;
+  padding: 0.1%;
+  position: relative;
+}
+
+#menu a {
+  color: #999;
+  float: left;
+  font: bold 11px/16px Arial, Helvetica;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#menu li:hover > a {
+  color: #fafafa;
+}
+
+#menu li:hover > ul {
+  display: block;
+}
+
+
+/* Sub-menu */
+#menu ul {
+  background: #444;
+  border-radius: 5px;
+  display: none;
+  /*left: 0;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 21px;
+  z-index: 99999;
+}
+
+#menu ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  /*-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+  -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+  box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;*/
+}
+
+#menu ul li:last-child {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#menu ul a {
+  display: block;
+  float: none;
+  height: auto;
+  line-height: 1;
+  padding: 10px;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+*html #menu ul a{ /* IE6 */   
+  height: 10px;
+  width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */  
+  height: 10px;
+  width: 150px;
+}
+
+#menu ul a:hover {
+  background: #0186ba;
+  background: -moz-linear-gradient(#04acec,  #0186ba);
+  background: -ms-linear-gradient(#04acec,  #0186ba);
+  background: -o-linear-gradient(#04acec,  #0186ba);
+  background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+  background: -webkit-linear-gradient(#04acec,  #0186ba);
+  background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+  border-bottom: 8px solid #444;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: '';
+  height: 0;
+  left: 30px;
+  position: absolute;
+  top: -8px;
+  width: 0;
+}
+
+#menu ul li:first-child a:hover:after {
+  border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+
+/* Clear floated elements */
+#menu:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
