@@ -1,3 +1,16 @@
+# ----------------------------------------------------------------------
+# ignore ALL files in ANY directory named temp
+temp/
+someFolder/
+anoterSomeFolder/
+
+# ------------------------------
+# Ignore files
+.directory
+.gitignore
+.github--icon.png
+
+# ----------------------------------------------------------------------
 # Compiled class file
 *.class
 
@@ -21,3 +34,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+# ----------------------------------------------------------------------
