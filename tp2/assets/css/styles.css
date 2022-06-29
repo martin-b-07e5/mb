@@ -59,11 +59,19 @@ img:hover {
   developer.mozilla.org/en-US/docs/Web/CSS/flex-direction 
   developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap*/
 .xListado {
+  /*
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: lightsalmon;
+  */
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
 }
 
 .xListado li {
